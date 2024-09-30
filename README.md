@@ -10,7 +10,7 @@ import cur "extra:curses"
 ### ols 
 ```json
 "collections":[
-    {"name": "extra", "path": "~/Devel/odin/extra"}
+    {"name": "extra", "path": "/home/leonardo/Devel/odin/extra"}
 ]
 ```
 ### Running

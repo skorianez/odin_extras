@@ -371,5 +371,11 @@ foreign libcurses {
     setscrreg  :: proc(top, bot : c.int) -> c.int ---
     wsetscrreg :: proc(win: ^WINDOW, top, bot : c.int) -> c.int ---
 
+    // Get a curses character from a window
+    inch    :: proc () -> chtype ---
+    winch   :: proc (win: ^WINDOW) -> chtype ---
+    mvinch  :: proc (x,y : c.int) -> chtype ---
+    mvwinch :: proc (win: ^WINDOW, x,y : c.int) -> chtype ---
+
 }
 
